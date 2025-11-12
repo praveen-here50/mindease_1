@@ -1,0 +1,175 @@
+body { 
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f8fbf7;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #a8d5ba;
+  color: white;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar nav button {
+  margin-left: 15px;
+  padding: 8px 12px;
+  border: none;
+  background: #8ccda4;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.navbar nav button:hover {
+  background: #7ac293;
+}
+
+/* Main layout */
+.main {
+  display: flex;
+  height: calc(100vh - 50px);
+}
+
+.rooms {
+  width: 50%;
+  border-right: 1px solid #ddd;
+  background: white;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+.rooms h2 {
+  margin-top: 0;
+}
+
+.room-card {
+  background: #f0f9f4;
+  border: 1px solid #cce3d5;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 12px 0;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.room-card:hover {
+  background: #e2f4e8;
+}
+
+/* Chat section */
+.chat {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+}
+
+.chat-placeholder {
+  margin: auto;
+  text-align: center;
+  color: #888;
+  font-size: 16px;
+}
+
+.chat-window {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f6fff9;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.chat-header h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.chat-header p {
+  margin: 2px 0 0 0;
+  font-size: 13px;
+  color: #555;
+}
+
+.messages {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+.bubble {
+  max-width: 70%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 12px;
+  word-wrap: break-word;
+}
+
+.bubble.user {
+  background: #a8d5ba;
+  color: white;
+  margin-left: auto;
+}
+
+.bubble.other {
+  background: #e2f4e8;
+  margin-right: auto;
+}
+
+.input-box {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #cce3d5;
+  border-radius: 8px;
+}
+
+.input-box button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  background: #a8d5ba;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.input-box button:hover {
+  background: #8ccda4;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Fullscreen */
+.fullscreen {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 50px);
+  z-index: 100;
+  background: white;
+}
